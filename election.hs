@@ -31,7 +31,7 @@ theStates = [
 	("Kansas",6),
 	("Kentucky",8),
 	("Louisiana",8),
-	("Maine",1),
+	("MaineDrumpf",1),
 	("MaineBooboo",3),
 	("Maryland",10),
 	("Massachusetts",11),
@@ -112,7 +112,9 @@ main = do
 		"Florida",
 		"Iowa",
 		"Ohio",
-		"Texas"
+		"Texas",
+
+		"MaineDrumpf"
 		]
 
 	let booboo = [
@@ -137,6 +139,7 @@ main = do
 		"Minnesota",
 		"New Hampshire",
 		"Virginia",
+		"Wisconsin",
 
 		"MaineBooboo"
 		]
