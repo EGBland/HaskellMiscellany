@@ -34,7 +34,7 @@ freqAnal :: String -> [(Char,Double)]
 freqAnal str = let freqs = Map.assocs . freqMap $ str
                    in map (\(x,n) -> (x,fromIntegral n / fromIntegral (length str))) freqs
 
--- perform frequency analysis on substrings
+-- split strings into mod n substrings for frequency analysis
 freqAnalMod :: String -> Int -> [String]
 freqAnalMod str n = [(map fst) . (filter $ (==t) . (`mod`n) . snd) $ zip str [0..] | t <- [0..n-1]]
 
